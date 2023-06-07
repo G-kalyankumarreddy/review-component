@@ -103,6 +103,7 @@
 }
 
 .user-rated-value{
+    color: var(--color-white);
     background-color: var(--color-orange);
 }
 
