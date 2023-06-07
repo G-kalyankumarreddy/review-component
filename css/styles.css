@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css?family=Overpass&display=swap");
+:root{
+    --color-orange: hsl(25, 97%, 53%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-lightgrey: hsl(217, 12%, 63%);
+    --color-mediumgrey: hsl(216, 12%, 54%);
+    --color-darkblue: hsl(213, 19%, 18%);
+    --color-verydarkblue: hsl(216, 12%, 8%);
+    --fontFamily-overpass:"Overpass"
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.page-container{
+    background-color: var(--color-verydarkblue);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.rating-card{
+    width: 230px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   background-image: linear-gradient(hsl(213, 19%, 18%),hsl(216, 12%, 8%));
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.star-icon-container{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--color-darkblue);
+}
+
+.star-icon{
+    height: 12px;
+}
+
+.question{
+    font-size: 18px;
+    font-family: var(--fontFamily-overpass);
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+.question-description{
+    color: var(--color-lightgrey);
+    font-size: 13px;
+    font-family: var(--fontFamily-overpass);
+    line-height: 1.5;
+}
+
+.rating-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating-style{
+    color:var(--color-lightgrey) ;
+    outline: none;
+    height: 35px;
+    width: 35px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--color-darkblue);
+}
+
+
+
+
+.rating-style:active{
+    background-color: var(--color-orange);
+}
+
+
+
+.formbutton-style{
+    width: 100%;
+    height: 30px;
+    color: var(--color-orange);
+    font-family:var(--fontFamily-overpass);
+    font-size: 14px;
+    font-weight: 700;
+    background-color: var(--color-white);
+    border: none;
+    border-radius: 10px;
+}
+
+.formbutton-style:hover{
+    color: var(--color-white);
+    background-color: var(--color-orange);
+}
+
+.user-rated-value{
+    background-color: var(--color-orange);
+}
+
+.thankyou-card{
+    width: 230px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: var(--color-darkblue);
+}
+
+.thankyou-card-hide{
+    display: none;
+}
+
+.thank-you{
+    height: 70px;
+}
+
+.thank-you-title{
+    font-family: var(--fontFamily-overpass);
+    color: var(--color-white);
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.user-rating-display{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color-orange);
+    text-align: center;
+    /* background-color: var(--color-lightgrey); */
+}
+
+.description{
+    color: var(--color-lightgrey);
+    font-size: 12px;
+    font-family: var(--fontFamily-overpass);
+    line-height: 1.5;
+    text-align: center;
+    font-weight: 700;
+}
